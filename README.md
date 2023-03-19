@@ -1,4 +1,10 @@
 SOCIAL MEDIA APP.
+
+main_page.html
+
+This page contains login screen,registration screen,content creation screen and profile page.
+
+
 login_and_registration_screen.html
 
 We have a login screen and registration screen in the same page.Coming to login page, we have two input boxes named Email Address and Password.At the bottom we have Forgot Password. If we click on Forgot Password we'll have Email Address input box and we'll have a button Reset Password.At the bottom we'll have back to the Registration Page and Login Page. If we click on registration page, we'll go back to registration page and if we click on login page, we'll go back to login page. Coming to registration page, we'll have four input boxes named Full Name, Email Address, Password and Forgot Password. We'll have registration button and the bottom we have Already have an account? Login Now. If we onclick on Login now we'll go back to login page.
