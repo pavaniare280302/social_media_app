@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendz</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAAFeCAYAAADNK3caAAAAAXNSR0IArs4c6QAAHrRJREFUeF7tnQt0VdWZx7+QEEISQkhIgAgICBKVofhCLUqLHa2PNaOrnerSVkEdH4CKWsWpdqp2VauO1gejKL7Hdpw644Olq0NRqyKioAhFEarIS0V5yTMJCXnM2pdJvAnn5jzvvue7+d21uuzC/fjO77/5ubPvOSc5LS0tLcIHAhCAAASsEchBvNZYMxEEIACBBAHEy0KAAAQgYJkA4rUMnOkgAAEIIF7WAAQgAAHLBBCvZeBMBwEIQADxsgYgAAEIWCaAeC0DZzoIQAACiJc1AAEIQMAyAcRrGTjTQQACEEC8rAEIQAAClgkgXsvAmQ4CEIAA4mUNQAACELBMAPFaBs50EIAABBAvawACEICAZQKI1zJwpoMABCCAeFkDEIAABCwTQLyWgTMdBCAAAcTLGoAABCBgmQDitQyc6SAAAQggXtYABCAAAcsEEK9l4EwHAQhAAPGyBiAAAQhYJoB4LQNnOghAAAKIlzUAAQhAwDIBxGsZONNBAAIQQLysAQhAAAKWCSBey8CZDgIQgADiZQ1AAAIQsEwA8VoGznQQgAAEEC9rAAIQgIBlAojXMnCmgwAEIIB4WQMQgAAELBNAvJaBMx0EIAABxMsagAAEIGCZAOK1DJzpIAABCCBe1gAEIAABywQQr2XgTAcBCEAA8bIGIAABCFgmgHgtA2c6CEAAAoiXNQABCEDAMgHEaxk400EAAhBAvKwBCEAAApYJIF7LwJkOAhCAAOJlDUAAAhCwTADxWgbOdBCAAAQQL2sAAhCAgGUCiNcycKaDAAQggHhZAxCAAAQsE0C8loEzHQQgAAHEyxqAAAQgYJkA4rUMnOkgAAEIIF7WAAQgAAHLBBCvZeBMBwEIQADxsgYgAAEIWCaAeC0DZzoIQAACiJc1AAEIQMAyAcRrGTjTQQACEEC8rAEIQAAClgkgXsvAmQ4CEIAA4mUNQAACELBMAPFaBs50EIAABBAvawACEICAZQKI1zJwpoMABCCAeFkDEIAABCwTQLyWgTMdBCAAAcTLGoAABCBgmQDitQyc6SAAAQggXtYABCAAAcsEEK9l4EwHAQhAAPGyBiAAAQhYJoB4LQNnOghAAAKIlzUAAQhAwDIBxGsZONNBAAIQQLysAQhAAAKWCSBey8CZDgIQgADiZQ1AAAIQsEwA8VoGznQQgAAEEC9rAAIQgIBlAojXMnCmgwAEIIB4WQMQgAAELBNAvJaBMx0EIAABxMsagAAEIGCZAOK1DDzIdDm3fS9IN/p0QuCm4yfJzeMvgBEEMkIA8WYEu79JEa8/Xl5aI14vlGiTLgKIN11kIxwX8UYI8/+HQrzRM2VE7wQQr3dWGWuJeKNHj3ijZ8qI3gkgXu+sMtYS8UaPHvFGz5QRvRNAvN5ZZawl4o0ePeKNnikjeieAeL2zylhLxBs9esQbPVNG9E4A8XpnlbGWiDd69Ig3eqaM6J0A4vXOKmMtEW/06BFv9EwZ0TsBxOudVcZaIt7o0SPe6JkyoncCiNc7q4y1RLzRo0e80TNlRO8EEK93VhlriXijR494o2fKiN4JIF7vrDLW0q94F13wcMZqzdTEi79aKZPn3ON5esTrGRUN00AA8aYBatRD+hVvyw1vRl1C7Md7Y90SmfCHqzzXiXg9o6JhGggg3jRAjXpIxOtOFPG6M6JFfAgg3vhkkbISxOseEuJ1Z0SL+BBAvPHJAvGGyALxhoBHV+sEEK915P4nZMfrzgzxujOiRXwIIN74ZMGON0QWiDcEPLpaJ4B4rSP3PyE7XndmiNedES3iQwDxxicLdrwhskC8IeDR1ToBxGsduf8J2fG6M0O87oxoER8CiDc+WbDjDZEF4g0Bj67WCSBe68j9T8iO151ZlOJdtfEO9wlj3GJ4v+tjXB2lGQKIV8E6QLzuIUUp3mXrJ8uuPSvdJ41pi3EHvx7TyiirlQDiVbAWEK97SFGLd3vtYvdJY9pifPWimFZGWYhX0RpAvO5hId5vGSFe9/WS6RbseDOdgIf5Ea87JMSLeN1XSXxaIN74ZJGyEsTrHhLiRbzuqyQ+LRBvfLJAvCGyQLyIN8Tysd4V8VpH7n9CdrzuzBAv4nVfJfFpgXjjkwU73hBZIF7EG2L5WO+KeK0j9z8hO153ZogX8bqvkvi0QLzxyYIdb4gsEC/iDbF8rHdFvNaR+5+QHa87M8SLeN1XSXxaIN74ZMGON0QWUYp308450thUE6KaaLv6fXcED1BEyz8doyHedFCNeEx2vO5AoxRvU3N8pGuu/O1PJrgDSGqBeH3hykhjxJsR7P4mRbzuvKIUr/tsdlvMWznW14SI1xeujDRGvBnB7m9SxOvOC/Fyxuu+SuLTAvHGJwvOeENkgXgRb4jlY70r4rWO3P+E7HjdmSFexOu+SuLTAvHGJwt2vCGyQLyIN8Tysd4V8VpH7n9CdrzuzBAv4nVfJfFpgXjjkwU73hBZIF7EG2L5WO+KeK0j9z8hO153ZogX8bqvkvi0QLzxyYIdb4gsEC/iDbF8rHdFvNaR+5+QHa87M8SLeN1XSXxaIN74ZMGON0QWiBfxhlg+1rsiXuvI/U/IjtedGeJFvO6rJD4tEG98smDHGyILxIt4Qywf610Rr3Xk/idkx+vODPEiXvdVEp8WiDc+WbDjDZEF4kW8IZaP9a6I1zpy/xOy43VnhngRr/sqiU8LxBufLCLb8Y4dUO3rqmaeeo0c0X+krz5+Gn+8Za3c8taTsnb7V366+Wq7q6FOVmxd57nPTcdPkpvHX+C5fSYb8j7eTNJPz9yINz1cIx3V747X7+Sv//Re+f6Bh/vt5qn9extWyHWvzZRFX62QusYGT31sNEK8NigzRyoCiFfB2tAq3jfXL5WrX5khy7eslYamxliRRryxiqPLFYN4FUSuUbx/+uxduWruDFm9fYM0tTTHjjLijV0kXaogxKsgbm3iffbjv8gv3pglq9N4phs2NsQbliD9wxBAvGHoWeqrSbxP/PVPiS/S1u3caIlOsGkQbzBu9IqGAOKNhmNaR9Ei3gcWvyC3L/iDfLFrc1p5RDE44o2CImMEJYB4g5Kz2E+DeO985z/lvvf+Rzbs3mqRTPCpEG9wdvQMTwDxhmeY9hHiLN7mlma5ed4TMmvpS7KxZlvaWUQ1AeKNiiTjBCGAeINQs9wnruLd1VArN817XP7jwz/L1rqdlqmEmw7xhuNH73AEEG84flZ6x1G8G2u+kRvemCXPr3xLttfvtsIhykkQb5Q0GcsvAcTrl1gG2sdNvObe3Ol/mSlzV78n5lFdjR/EqzG17KkZ8SrI8r2vVqa1yuqywdKrR6GnOT7ctFquefXfZcGXH0nt3npPfZwaTT3yTJk4+tTA/cN2rCoqlwNKKsIOY6U/72qwgtnqJIjXKm7dk7375XK5cu79smzTZ1LftDfwxUw/9hy5auxPZEBxeeAxulJHxJt9aSPe7Ms0LVf02trFMnXOPbJq25eBHwHO65Yr/zrufLnsiDOksqhPWurMxkERb/alinizL9PIr2j2J/Pl2tceTEg36Kd3jyL51fETZeLoU6S8Z++gw3TJfog3+2JHvNmXaaRX9PuP5sqv5j0ua0K8d6GquFxuGX+h/FP196W0oDjS+rrCYIg3+1JGvNmXaWRX9NAHs+W3C34v63duCjzmiLKB8pvxF8mpBx3r+Qu8VRvv8DVfv95nSK8Cfy9/9zVBhhsj3gwHkIbpEW8aoGbDkHcv/KP8buEfQz0CPKbfcLl9wqVywqDRUti9wDOWZesny6493u/kOGzgXVJaeKTn8bU1RLzaEnOvF/G6M+pyLW6Z/4TMXDw71CPA4waOkn/7wWQ5ot/B0iMv3xdDI97ttYs99xk9eCbiTaI1vnqRZ3Y0zAwBxJsZ7rGddW9zo5z9ws3ywt/eClzjD4cdLXf/YKqMLB8s5k4Gvx/E254YO16/Kyj+7RFv/DOyWmFLS4uYBzYu+9+7ZcnGT33P/aOR4+XOEy+TYaVVkpOT47u/6YB4EW+ghaOoE+JVFJatUhubm+T1dUtkypzf+bqF7LxRJ8uvx18oQ0oHhCoV8SLeUAtIQWfEqyCkTJRY39QgL326QC7/872eznovO+If5YbvnieDSipDl+tXvJUlp0heblHoeZ0GKOoxQgaU/iiysc2Xhht3zPY13oZtz/lqzxmvL1wZaYx4M4Jdx6S1e/fIM8tfk2mv3C81e/ekLPrnx5wt14w9S6p69Y3kwvyKN7dbeqRrLiYvt1AOKDtXBvb5aSTXZr40XP7Ftb7Gamqu8dUe8frClZHGiDcj2PVMat65+8iSl+Tnrz24X9Hmi7MbvvszmXLkmdKvqCyyi/Ir3sgmTjFQfl65DCj9sRzY959DT2XEa64vnR/Em0660YyNeKPhmNWjbN+zW+5d9N9yy/wn267TPAL8y3Hny6TRp0jfwtJIrz9u4jUX1z2vVPqX/IMc2Pdi6dbN+z3JHcEg3kiXitrBEK/a6OwWvqV2u9zx7jNy17v/JeYR4JtOmCQ/qZ4gfXr2iryQOIo3Id/cEunb6+9lSMWl0j032Et+EG/ky0XlgIhXZWyZKXpT7bbEr/r53uAxctpBx0pJj/ScrcZVvIa6OU8uLz5ehlRMkYLu/u/eQLyZWbtxmxXxxi2RmNezYdcWMccMRfk901ZpnMVrLrpbToH0KTpKhlZeLoX5w3xxQLy+cGVtY8SbtdHqvbC4i3ffzreHFPU4RIZVXiklPUd5ho14PaPK6oaIN6vj1XlxGsRryOZIrhQWDJODKq+W0sKjPMFGvJ4wZX0jxJv1Eeu7QC3i3Uc2R3rmD5RhFdOkvNd4V9iI1xVRl2iAeLtEzLouUpd497Et6F4lQyomS2XJDzuFjXh1rcV0VYt400WWcQMT0Chec7E98vrJ4L4XyYDSM1NeO+INvCyyqiPizao4s+NiNu2cI41N/h6TjeLKG5t2yeffPC5Nzakfj3abJz+vQgaV/UwOKDvHsakRb239WrdhQv37qj4/DtWfzukngHjTz5gZfBLw+24Cn8OnbN7S0iSbd70qazfPkr1N3wQeNj+3XKrKzpLB5RfsN4aNa0vnuysCQ6FjOwKIlwUBgSQCjU27ZVvNAlm75WGpa/g8MJvuuaXSv/QMGdJ3SuD3EgeenI6xJ4B4Yx8RBdom0Ny8R3bULZU1mx+Q3Xv+Fnj6vNySxJdtQyunSm5OYeBx6Jh9BBBv9mXKFUVAoKVlr+yq/0TWbJ4hO2o+CDxiXrfixG1mQysul/y8aF6bGbgYOsaGAOKNTRThCnn66adl6dKloQbp06ePXHHFFdK7d+/EOEHGHDp0qJxzzjlSXl6espZly5bJU0895bvWjvXV19fLI488ImvWrGkba9CgQXLJJZdIYWHnO8wdO3bIjBkzZNu2bW19Te0XX3yx9OjRI/FnLdIkO3avlvlLrpeSii9819vaIbdbTyktPFqGVV6VuOc3+fPKK6/InDlzAo89ZswYOe+882T79u3y0EMPyebNm9vGMtdhWAwZMqTT8RcsWCDPPdf+ZeuHHnqoTJw4UfLy8gLXRsfUBBBvlqyOmTNnyqJF4X67rJHljTfeKEZw5hN0zPz8fDn99NPllFNOEfP/O37ef/99eeCBB3yT71hfXV2d3HPPPfLpp+1/N9wZZ5wh5n+d/c43I9xbb71Vtm7d2lbHiBEj5Oqrr5aePb99D4WZY+as30jZoEUy7NAdvmtu7ZAj+dK76O9kWMXVUlxwcNs4s2fPlhdffDHwuGPHjpXJk/e939dI/JlnnhHze/NaP4cffrhMmTIlpUDNf4DuvPNO2bBhQzthT5s2TQ455JDAddGxcwKIN0tWSFBJJl9+VOJtHbN///5i/gKbfyZ/0i1eI04jUCPSVB8/4jVy37DxYxl93GapHvPtDtnv0mlp6SbFBcNlRL/rpKTwO4nuUYp39+7dctddd8m6devaSjM7VvNTzOjRox3LdZr/uOOOk4suukhyc/3/hmi/TLpqe8SbJcnHUbxGgNdee60MG9b+DV7pFq+JdPjw4Qn5pjpy8Ctes6vuWbxXRh29VUaN/XaX7Hf55OR0S9ztMLxyuuTk5IYW75lnnpnY3bd+zDGOOUJpbGxs+7NRo0Yl5Nvxp49NmzbJ7bff3u64paSkJJGZObLhkz4CiDd9bK2OXFNTIw0NDfvNuX79enn44YfF/Mjc+jFHACeffPJ+bbt16ya9evUS80/z6ShzI9JLL71UBg8e7Hhtc+fObXde6Ue8qWpKnqhjfamOGlr7dHbkEES8ZtyeRY3ynWPrpPrILyQnp9l3xkX5B8vIql9KcUF1oq+5hj173B/YeP7552X+/Pnt5jvwwAMTkiwuLm77cyPcBx98UJYsWdL2Z2bnas6ujznmmLY/M8cRzz777H7ny16OaXxfNB32I4B4s3xRrF69OvHjZ7J4O+6SUiFwEq/TDra1f8cfW/2I12tNybW6ibezI4eg4jXz968qkQsnj5bNdc9IY9NOzyuodlexHH7Qr6Wy7LjEm828fsxu2xx3JGfY2RGCU+YdJf35558n1sXOnd/WX1VVJdOnT2/7ctVrfbTzTwDx+memqkdXFq8JKtWRQxjxmrPwf/nFNGnMXSrrtjwi9Y1fu66J2l15sm75EXLeWbdJYWGJa/vWBka2999/v6xcubJdnwkTJiTuZnD6AtHsZs0dKa+//npbH9PO3G1y0kknSVNTkzz22GPyzjvvtPv3kyZNkvHj3d+w5rl4GqYkgHizfHF0dfGaeJ1+fA4rXnP3R0nvHrKtZqGs2zJLauo/S7mSGupzZOGrAyS38UiZduW17e6acFt+L7/8sphjhuQ7FcyXleYnj85u2fv666/ljjvuSNxm1vpp3dGaOxjuu+8+MbfjtX6c7uhwq41/H5wA4g3OTkXPriZe8yN49+7d2/1Y7nTkEIV4zW13zS17ZFfdclmz6UHZuefD/daEubNr0Wv95ZNlpTJ0SPV+t6t1toicjgPM9Zlz9qOOcn/xutMdC6eddpqYc/+PPvqobWq3Ox9ULHRlRSJeZYH5LVeLeDv7cq3jl2rJP4Z3vI/X7AJPPPFEeeGFF9p9s9/xyCEq8Zpamlv2Sl3DGlm9aUZiB5z8+eCtSlmxuEwa6nMTt7d1vE84VZ7mi1Jzd0KyIE3bcePGiTkS8PJgg9M9uk7zud3r63fN0d6dAOJ1Z6S6hRbxdga54/3FbuK9/vrrE7dpvf322+2GTT5yiFK8+yZplrqGDbJ2ywzZvHPf2eqnfx0o771ZLPV1+75I8yPeefPmyZNPPtnuiKGioiJxxFBZWel5TTqNk9w51RegniegYSACiDcQNj2dohSv36v2c1dDlOI156/mtirzrb25V7X1k3zkEL1421+B1/GdrtvpfNZ8ORbkyy+3Oz86+5LOb960904A8XpnpbJlJsVbVFSU2KF1fFeA3wco/O54Wx97XrhwoTz66KOORw7miyWvjww7HWckP1rttDCCitf8B8PUbGpP/oQ5DnB6qMKMHWQHrfIvQQyLRrwxDCXKkjIhXrM7GzlypJx77rmOT0A5idc8YVZQUOB46R1fjtPayGk3lyxpIzHz47rTkYO5beq2227z9K4Gm+J1+o9F2KfJUsn87LPPTrxPg499AojXPnOrM9oWr9lFnX/++XLYYYelfEmNk3ijeoCi4+7YvK3L6cjB/Nhuntzy8pIcW+I1tZhazVFD6yf5/tswC8fpDoepU6d6ujsizLz0dSaAeLN8ZUQp3uQzW6eb9A1Ks4M666yzOn0zmE3xmpqcdpFlZWWJW86SnwZL9XYyG+I1DzWY3XnHx4Krq6vlyiuv9HXvr9OSRrzx+ouOeOOVR+TVpEu8plCnL4G8/FhsW7ypjhw6ws6keJ3OYc07GK655hox7wkO+0G8YQlG2x/xRsszdqOlU7zmYp3+Qrt9EWRbvKZOpyOHuIg31f22Ub6wBvHG668m4o1XHpFXk27xOknD7UmoTIg31ZFDMvBM7HhTvSXM7bWWfhcK4vVLLL3tEW96+WZ89HSLt1Vo5lfwmHPK1k9nDwtkSrxuRw6ZEK/Tm8fMr+yJ+jdAIN6M/1VsVwDijVcekVdjQ7xOj7d29m283/t4W6F4+dU/qe75bR2jsyMHr+INGlLH8WtraxOve1y1alXQISX5V/90NgjiDYw4LR0Rb1qwxmdQG+I1V7tixYr93nhlHm297rrrpG/f9r9dN5Pi7ezIId3iNb9A0tyh0PrLNJ2y8btyEK9fYvFoj3jjkUPaqrAlXqd3vJqLcrq9LNPiTXXkkC7xmif4zMMK5neZJb/cBvGmbdnHfmDEG/uIwhVoS7ymSqfby5ze15Bp8ZpanY4cohaveavaCSeckJBu8m8ubk0U8YZb25p7I17N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJIF7N6VE7BCCgkgDiVRkbRUMAApoJ/B/igdTm/h18hgAAAABJRU5ErkJggg==">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img src="https://cdn.pixabay.com/photo/2017/01/16/20/21/bubbles-1985147__340.png" class="logo">
+            <h2 class="log">
+                Trendz
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators.">
+            </div>
+            <div class="create">
+                <label class="btn btn-primar" for="create-post"><a href="http://127.0.0.1:5501/index.html" style="color: white;">Log-out</a></label>
+                <div class="profile-photo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsb_V_Ha4XAl47doWf_2lF-actuld60ssYew&usqp=CAU">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <div class="container">
+
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhf1wxZAl8SDAgUG32w6RasqVRF-ggOC52IQ&usqp=CAU">
+                    </div>
+                    <div class="handle">
+                        <h4>Pavani Are</h4>
+                        
+                    </div>
+                </a>
+                <!-- ----------------SIDEBAR--------------------- -->
+                <div class="sidebar">
+                    <a href="#" class="menu-item active">
+                        <span><i class="uil uil-estate"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/data.html" class="menu-item">
+                        <span><i class="uil uil-users-alt"></i></span>
+                        <h3>Friends</h3>
+                    </a>
+                    <a class="menu-item" id="notification-popup">
+                        <span><i class="uil uil-bell" onclick="myFunction()"><small class="notification-count">16+</small></i></span>
+                        <h3 onclick="myFunction()">Notifications</h3>
+                        <!-- ----------------POP-UP--------------------- -->
+                        <div class="ns notifications-popup" id="notifications">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNys7iFvBBxifr5E1pgSgnlKxZ8G9HO-47sSR1oW57o1QAXA3YuXsmpVq1WZk9-HkoZls&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Pavani Are</b>added a photo <b> </b>on Tuesday
+                                    <small class="text-muted">23 minutes ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Rohith </b>added a photo in <b>LinkedIn </b>**
+                                    <small class="text-muted">19 hours ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROt7YUKa7excpJt4CR59ZwHzhWDfV1mr0eQ&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ishika Shivangi </b>posted in <b>Twitter</b>
+                                    <small class="text-muted">19 hours ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaQ6zzWR5C3QdKrolGKArwJDsiezj4YBUVMQ&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Prasanth </b>invited you to like <b>about Cancer Campaign.</b>
+                                    <small class="text-muted">1 day ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwHvEGamFasFcudDxAlTzNzd2ZsSRKsmf4Uw&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    You have a new friend Suggestion: <b>Sneha Gorantla
+                                        <small class="text-muted">3 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYH_VDaGfxQ_cPhkgDPyoxXJgnnKHzEw7kdg&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    You hava a new friend Suggestion: <b>Charan. </b>
+                                    <small class="text-muted">4 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Sharon </b>added a new photo.
+                                    <small class="text-muted">8 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="image/popup7.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    65,928 people are watching <b>FreeFire </b>live. Watch and chat with other fans.
+                                    <small class="text-muted">6 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIs2X9ZFUV5BhVV6dzpJvzBb0XOJzz96wtesNVtgwWK0NMPzscdPneljJhFUwQ12qgxi4&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Paccha Tritisha </b>accepted your friend request.
+                                    <small class="text-muted">2 weeks ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsRaxjmTjBOHUP5gorI1PnOeb4dVeEy5YFrw&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    You might like <b>Gautham Are. </b>
+                                    <small class="text-muted">1 week ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdNnMh6qmlMex0So-_YFdmGRqzoWEFTweew&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    You might like <b>Raja Sekhar </b>
+                                    <small class="text-muted">4 weeks ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPz9Dx3KZoLsaeE_gEeWAcn4h_ds3FUUjoA&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Chinta Srinidhi</b>posted in <b>Instagramर</b>
+                                    <small class="text-muted">5 weeks ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeaJ2HuVH55RTMqf9WUqJgrHD9pno-cyR7sTUO9LJKq9Wdyr2iiZ2ENsyM8dzGBXcwJJ0&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Warning:Event Managers </b>posted a new video.
+                                    <small class="text-muted">2 weeks ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVuqrd_IeecAepVGAaotWCrKyBkoVWVCWNWw&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    You have a new friend suggestion: <b>Neha Saigal. </b>
+                                    <small class="text-muted">3 weeks ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZAxzWZY-ry0mqJfgKu3XBinZlaEr3uTLp_dl7NTdwavesRT0Tx1ebzc_sT4Enz-puvus&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Warning: Do </b>like this page, <b>you will enjoy it. </b>posted a new video:
+                                    <small class="text-muted">4 weeks ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-----------------------------END NOTIFICATION POPUP--------------------------------->
+                    </a>
+
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="uil uil-envelope-alt" onclick="myFunction1()"><small class="notification-count">6</small></i></span>
+                        <h3 onclick="myFunction1()">Messages</h3>
+
+
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-swatchbook"></i></i></span>
+                        <h3>Memories</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/data.html" class="menu-item">
+                        <span><i class="uil uil-chart-line"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/data.html" class="menu-item ">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Setting</h3>
+                    </a>
+
+                </div>
+                <!-- ----------------END-LEFT-SIDEBAR--------------------- -->
+                <label for="create-post" class="btn btn-primar">Create Post</label>
+                <div class="messages" id="Message-popup">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <i class="uil uil-message"></i>
+                    </div>
+                    <!-- ----------------SEARCHBAR--------------------- -->
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search messages" id="searchbar" onkeyup="search_message()">
+                    </div>
+                    <!-- ----------------MESSAGES CATEGORY--------------------- -->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                    <!-- ----------------MESSAGES--------------------- -->
+                    <div class="scroll">
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYH_VDaGfxQ_cPhkgDPyoxXJgnnKHzEw7kdg&usqp=CAU">
+                                <div class="active"></div>
+                            </div>
+                            <div class="message-body">
+                                <h5>Charan</h5>
+                                <p class="text-muted">Let's Meet at the CONFERENCE....</p>
+                            </div>
+                        </div>
+                        <!-- ----------------MESSAGES--------------------- -->
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIs2X9ZFUV5BhVV6dzpJvzBb0XOJzz96wtesNVtgwWK0NMPzscdPneljJhFUwQ12qgxi4&usqp=CAU">
+                            </div>
+                            <div class="message-body">
+                                <h5>Paccha Tritisha</h5>
+                                <p class="text-muted">Submit your Assignments Tomorrow </p>
+                            </div>
+                        </div>
+                        <!-- ----------------MESSAGES--------------------- -->
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaQ6zzWR5C3QdKrolGKArwJDsiezj4YBUVMQ&usqp=CAU">
+                            </div>
+                            <div class="message-body">
+                                <h5>Prashanth</h5>
+                                <p class="text-muted">Join today's webinar from CCBP Academy</p>
+                            </div>
+                        </div>
+                        <!-- ----------------MESSAGES--------------------- -->
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPz9Dx3KZoLsaeE_gEeWAcn4h_ds3FUUjoA&usqp=CAU">
+                                <div class="active"></div>
+                            </div>
+                            <div class="message-body">
+                                <h5>Chinta Srinidhi</h5>
+                                <p class="text-muted">Good Morning Pavani</p>
+                            </div>
+                        </div>
+                        <!-- ----------------MESSAGES--------------------- -->
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU">
+                                <div class="active"></div>
+                            </div>
+                            <div class="message-body">
+                                <h5>Rohith</h5>
+                                <p class="text-muted">Hi Gude...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------END OF MESSAGES--------------------- -->
+            </div>
+            <!-- ----------------END-LEFT-SIDEBAR--------------------- -->
+
+            <!-- ----------------MIDDLE--------------------- -->
+            <div class="middle">
+                <!-- ----------------STORIES--------------------- -->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNys7iFvBBxifr5E1pgSgnlKxZ8G9HO-47sSR1oW57o1QAXA3YuXsmpVq1WZk9-HkoZls&usqp=CAU">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsRaxjmTjBOHUP5gorI1PnOeb4dVeEy5YFrw&usqp=CAU">
+                        </div>
+                        <p class="name">Gautham Are</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPz9Dx3KZoLsaeE_gEeWAcn4h_ds3FUUjoA&usqp=CAU">
+                        </div>
+                        <p class="name">Chinta Srinidhi</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdNnMh6qmlMex0So-_YFdmGRqzoWEFTweew&usqp=CAU">
+                        </div>
+                        <p class="name">Raja Sekhar</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIs2X9ZFUV5BhVV6dzpJvzBb0XOJzz96wtesNVtgwWK0NMPzscdPneljJhFUwQ12qgxi4&usqp=CAU">
+                        </div>
+                        <p class="name">Paccha Tritisha</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU">
+                        </div>
+                        <p class="name">Sharon</p>
+                    </div>
+                </div>
+                <!-- ----------------END OF STORY--------------------- -->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNys7iFvBBxifr5E1pgSgnlKxZ8G9HO-47sSR1oW57o1QAXA3YuXsmpVq1WZk9-HkoZls&usqp=CAU">
+                    </div>
+                    <input type="text" placeholder="What's in your mind Pavani Are?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primar">
+                </form>
+                <!-- ----------------FEEDS--------------------- -->
+                <div class="feeds">
+                    <!-- ----------------FEEDS-1--------------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIs2X9ZFUV5BhVV6dzpJvzBb0XOJzz96wtesNVtgwWK0NMPzscdPneljJhFUwQ12qgxi4&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Paccha Tritisha</h3>
+                                    <small>45 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://www.shutterstock.com/image-photo/profile-gorgeous-woman-her-20s-260nw-2107392290.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPz9Dx3KZoLsaeE_gEeWAcn4h_ds3FUUjoA&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdNnMh6qmlMex0So-_YFdmGRqzoWEFTweew&usqp=CAU"></span>
+                            <p>Liked by <b>Chinta Srinidhi...</b>and <b>2500 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Paccha Tritisha </b>wants to ensure good life-changing habits.</p>
+                            <span class="harsh-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 321 comments </div>
+                    </div>
+                    <!-- ----------------FEEDS-2--------------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Sharon</h3>
+                                    <small><b>Fitness</b> Yesterday at 08:30</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://cdn.shopify.com/s/files/1/0330/6521/articles/The_One_Exercise_You_Should_Add_to_Your_Workout_Routine_640x.jpg?v=1626275034">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8dIqgP6eNuW3zKmPV5rqqiaeMzpJ6ZbNQhw&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPz9Dx3KZoLsaeE_gEeWAcn4h_ds3FUUjoA&usqp=CAU"></span>
+                            <p>Liked by <b>Rajasekhar</b>and <b>3273 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Sharon </b>wants to ensure your fitness should become a part of your life
+                                <span class="harsh-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 2577 comments </div>
+                    </div><!-- ----------------FEEDS-3--------------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsRaxjmTjBOHUP5gorI1PnOeb4dVeEy5YFrw&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Gautham Are</h3>
+                                    <small>Paris,3 days ago.</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://media.cntraveler.com/photos/5d8cf7d5db6acf000833e6cc/3:2/w_3999,h_2666,c_limit/Eiffel-Tower_GettyImages-1060266626.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNys7iFvBBxifr5E1pgSgnlKxZ8G9HO-47sSR1oW57o1QAXA3YuXsmpVq1WZk9-HkoZls&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdNnMh6qmlMex0So-_YFdmGRqzoWEFTweew&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <p>Liked by <b>Pavani Are </b>and <b>509 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Gautham Are </b>is feeling very happy today.
+                                <span class="harsh-tag">#travelling</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 109 comments </div>
+                    </div><!-- ----------------FEEDS-4--------------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8dIqgP6eNuW3zKmPV5rqqiaeMzpJ6ZbNQhw&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Prasanth</h3>
+                                    <small>Photographer,15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlQjx4PEf55vUBwv2JYZr8WddU9_leGeYCA&usqp=CAU">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8dIqgP6eNuW3zKmPV5rqqiaeMzpJ6ZbNQhw&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPz9Dx3KZoLsaeE_gEeWAcn4h_ds3FUUjoA&usqp=CAU"></span>
+                            <p>Liked by <b>Rajasekhar </b>and <b>731 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Prasanth </b>says photography is his love .
+                                <span class="harsh-tag">#photography</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 77 comments </div>
+                    </div>
+                    <!-- ----------------FEEDS-5--------------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6FTuThyL6wj5Z8PxoHJvAw3ivhHLlu1ckuw&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Manju Sri</h3>
+                                    <small><b>Enjoying Memes.</b> Yesterday at 19:30.</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTkaqOP9yJFZ1K8SxCgecggVo9XlKalTTDQ&usqp=CAU">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNys7iFvBBxifr5E1pgSgnlKxZ8G9HO-47sSR1oW57o1QAXA3YuXsmpVq1WZk9-HkoZls&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdNnMh6qmlMex0So-_YFdmGRqzoWEFTweew&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <p>Liked by <b>Pavani Are </b>and <b>3220 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Enjoying memes</b>.....
+                                <span class="harsh-tag">#memes "Memes as a stress buster"</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 981 comments </div>
+                    </div>
+                    <!-- ----------------FEEDS-6--------------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3iJq_eN7eZnfIUWIg4Vv03dZty4lSmvtrPQ&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Dinesh Chauhan</h3>
+                                    <small>Chennai,15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_mWPqU-1c79XRMM2FU2nkEYCH9sepi0fklQ&usqp=CAU">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdNnMh6qmlMex0So-_YFdmGRqzoWEFTweew&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTkaqOP9yJFZ1K8SxCgecggVo9XlKalTTDQ&usqp=CAU"></span>
+                            <p>Liked by <b>Chinta Srinidhi </b>and <b>731 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Dinesh Chauhan </b> Cricket lover!! Cricket is my passion.
+                                <span class="harsh-tag">#cricket</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 377 comments </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-0ekCTCl_Wv4Fe7emLptup8bU3QlPMfMLw&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Prathima</h3>
+                                    <small>45 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUBKjQnjrBnFdGaE9i6aoFlgJ6xhG5c7utLQ&usqp=CAU">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3iJq_eN7eZnfIUWIg4Vv03dZty4lSmvtrPQ&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTkaqOP9yJFZ1K8SxCgecggVo9XlKalTTDQ&usqp=CAU"></span>
+                            <p>Liked by <b>Dinesh Chauhan </b>and <b>3731 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Prathima </b> Enjoying the sip of coffee.
+                                <span class="harsh-tag">#coffee</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 477 comments </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxb5oWn8Yt3FwTyIQ2sgni_Y4yrooGHZHPA&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Preety Zinta</h3>
+                                    <small>59 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMVgM5w3NGTf2sYbAszgHkX2G3GPN5bpvSw&usqp=CAU">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6FTuThyL6wj5Z8PxoHJvAw3ivhHLlu1ckuw&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3iJq_eN7eZnfIUWIg4Vv03dZty4lSmvtrPQ&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTkaqOP9yJFZ1K8SxCgecggVo9XlKalTTDQ&usqp=CAU"></span>
+                            <p>Liked by <b> Manju Sri </b>and <b>331 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <span class="harsh-tag">#painting</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 27 comments </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XekZuj6rCWNL8ltMntysfUKLuNiQWbYR_g&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Priya</h3>
+                                    <small>Happy ,1 day Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://t3.ftcdn.net/jpg/02/74/09/04/360_F_274090487_3mU4SQqlgcERs2IZeeMlnmTppqpHGKvA.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxb5oWn8Yt3FwTyIQ2sgni_Y4yrooGHZHPA&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTkaqOP9yJFZ1K8SxCgecggVo9XlKalTTDQ&usqp=CAU"></span>
+                            <p>Liked by <b>Preety Zinta </b>and <b>8731 others</b></p>
+                        </div>
+                        <div class="caption">
+                        </div>
+                        <div class="comments text-muted">View all 777 comments </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaAYFXNdXSZc7ar3wGkgY0QbnAA7w6xGH3Uw&usqp=CAU" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Purnima Gaddam</h3>
+                                    <small>5 days Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMPsANLUCHRqkKwyvlw7YrZEw-R0902KA05g&usqp=CAU">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class=" uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XekZuj6rCWNL8ltMntysfUKLuNiQWbYR_g&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxb5oWn8Yt3FwTyIQ2sgni_Y4yrooGHZHPA&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdTSkCO3sqHgVg2ebaTLykYL0dM6F-rFfTg&usqp=CAU"></span>
+                            <p>Liked by <b>Priya </b>and <b>9711 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <span class="harsh-tag">$$</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 5011 comments </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="right">
+
+
+
+                <a class=" btn request-btn" onclick="myFunction2()">
+                    <h3>Friend Requests</h3>
+                </a>
+                <div class="friend-requests" id="reuest-popup">
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqd1u4Q5hnfWhBNc79i2VtVd9bpPlF9OF35g&usqp=CAU">
+                            </div>
+                            <div>
+                                <h5>Vyshnavi</h5>
+                                <p class="text-muted">
+                                    7 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primar">
+                                Accept
+                            </button>
+                            <button class="btn btn-primar">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2atON6hmTwftZARpG6K41qdxx4bMid3Aacg&usqp=CAU">
+                            </div>
+                            <div>
+                                <h5>Niharika</h5>
+                                <p class="text-muted">
+                                    2 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primar">
+                                Accept
+                            </button>
+                            <button class="btn btn-primar">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmduKYsCdSKWRaK5vpr7fdf61uH39_DcOrGg&usqp=CAU">
+                            </div>
+                            <div>
+                                <h5>Swapna</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primar">
+                                Accept
+                            </button>
+                            <button class="btn btn-primar">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3aq_-kFmPjEppOiQErVpXcJc9ZwI7nCvxrA&usqp=CAU">
+                            </div>
+                            <div>
+                                <h5>Divya</h5>
+                                <p class="text-muted">
+                                    4 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primar">
+                                Accept
+                            </button>
+                            <button class="btn btn-primar">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts">
+                    <div class="contact">
+                        <h3>Contacts</h3>
+                        <div>
+                            <span><i class="uil uil-video"></i></span>
+                            <span><i class="uil uil-search"></i></span>
+                            <span><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+                    </div>
+                    <div class="contact-profile">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3aq_-kFmPjEppOiQErVpXcJc9ZwI7nCvxrA&usqp=CAU">
+                        </div>
+                        <div class="notification-body">
+                            <b>Divya Kosanam</b>
+                            <small class="text-muted">divya</small>
+                        </div>
+                    </div>
+                    <div class="contact-profile">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XekZuj6rCWNL8ltMntysfUKLuNiQWbYR_g&usqp=CAU">
+                        </div>
+                        <div class="notification-body">
+                            <b>Priya Tripathi</b>
+                            <small class="text-muted">priya</small>
+                        </div>
+                    </div>
+                    <div class="contact-profile">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5GABId_PvctyWSxgyeithW-rKNqWD0laN3w&usqp=CAU">
+                        </div>
+                        <div class="notification-body">
+                            <b>Meghana Chennamsetty</b>
+                            <small class="text-muted">Meghana</small>
+                        </div>
+                    </div>
+                    <div class="contact-profile">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmiXFoYxonv_2xojr_ho2T83vxbONX9zlKCA&usqp=CAU">
+                        </div>
+                        <div class="notification-body">
+                            <b>Srujana Chakka</b>
+                            <small class="text-muted">Srujana</small>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-profile">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXjkEiSBDsmdQUyCxHBXegWMvbS0EOYL0HZloCOGFkqudQmqwH8euCk2iexmrjEMXtTp4&usqp=CAU">
+                        </div>
+                        <div class="notification-body">
+                            <b>Kalyani Samvedya</b>
+                            <small class="text-muted">kalyani</small>
+                        </div>
+                    </div>
+                    <div class="contact-profile">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDptQs-WiRev7GZSn5ZuCmk3WFIldSiF0jmO8LJ9h-77gC59idSjCFmuD8kJBMcW-TLyg&usqp=CAU">
+                        </div>
+                        <div class="notification-body">
+                            <b>Nidhi Sri</b>
+                            <small class="text-muted">Nidhi</small>
+                        </div>
+                    </div>
+                    <div class="contact-profile">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5XP0TN5r7qChGOFWRBfX74Y_Ua1Lwihf1GDGfprGA2VHnfT0dL0ajlScSAJl-BvY1hUI&usqp=CAU">
+                        </div>
+                        <div class="notification-body">
+                            <b>Sita Mahalakshmi</b>
+                            <small class="text-muted">Sita</small>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    </main>
+
+
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size,color,and background</p>
+
+
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size1"></span>
+                        <span class="font-size2 active"></span>
+                        <span class="font-size3"></span>
+                        <span class="font-size4"></span>
+                        <span class="font-size5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="big-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="big-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Light Out</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index1.js"></script>
+</body>
+
+</html>
