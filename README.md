@@ -12,7 +12,7 @@ We have a login screen and registration screen in the same page.Coming to login 
 
 home_screen_and_content_creation_screen.html
 
-I kept my social media app name as Trendz. In this app, if we click on the icon notifications, we'll get the notifications of the people. If we click on the icon messages, we'll get messages from the people.If we click on Themes, we can customize our font size,color and background like light,dim ang light out.In this app, we can see different content created by creators.At the bottom we have Friend Requests button. If we click on that button we can see friend requests.At the bottom, we have contacts, where we can see our contacts.
+I kept my social media app name as Trendz. In this app, if we click on the icon notifications, we'll get the notifications of the people. If we click on the icon messages, we'll get messages from the people.If we click on Themes, we can customize our font size,color and background like light,dim and light out.In this app, we can see different content created by creators.At the bottom we have Friend Requests button. If we click on that button we can see friend requests.At the bottom, we have contacts, where we can see our contacts.
 
 
 profile_screen.html
